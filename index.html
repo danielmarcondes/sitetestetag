@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Formulário de Cadastro Teste Tag</title>
+    <title>Teste Tag</title>
+
     <script>
 	    
-	    ////////////Data Layer Exemplo
+	   //Data Layer Exemplo
 		
 			 window.dataLayer = window.dataLayer || [];
 			 window.dataLayer.push({	
@@ -22,75 +23,11 @@
 				 'quantity': 2 
 							 }] 
 						}); 
-		
-	    
-	    
-////////////////////////////////////////////////////////////////Validação do Formulario////////////////////////////////////////	    
-        function validarFormulario() {
-            var nome = document.forms["meuForm"]["nome"].value;
-            var endereco = document.forms["meuForm"]["endereco"].value;
-            var telefone = document.forms["meuForm"]["telefone"].value;
-            var senha = document.forms["meuForm"]["senha"].value;
-            var confirmarSenha = document.forms["meuForm"]["confirmarSenha"].value;
-
-            if (nome === "") {
-                alert("Por favor, preencha o campo nome.");
-                return false;
-            }
-
-            if (endereco === "") {
-                alert("Por favor, preencha o campo endereço.");
-                return false;
-            }
-
-            if (telefone === "") {
-                alert("Por favor, preencha o campo telefone.");
-                return false;
-            }
-
-            if (senha === "") {
-                alert("Por favor, preencha o campo senha.");
-                return false;
-            }
-
-            if (confirmarSenha === "") {
-                alert("Por favor, preencha o campo confirmar senha.");
-                return false;
-            }
-
-            if (senha !== confirmarSenha) {
-                alert("As senhas digitadas não coincidem.");
-                return false;
-            }
-
-            if (senha.length < 8) {
-                alert("A senha deve ter no mínimo 8 caracteres.");
-                return false;
-            }
-
-            alert("Dados salvos com sucesso!");
-            return true;
-        }
+	
     </script>
 </head>
 <body>
-    <form name="meuForm" onsubmit="return validarFormulario()">
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" required><br><br>
-
-        <label for="endereco">Endereço:</label>
-        <input type="text" name="endereco" required><br><br>
-
-        <label for="telefone">Telefone:</label>
-        <input type="text" name="telefone" required><br><br>
-
-        <label for="senha">Senha:</label>
-        <input type="password" name="senha" required><br><br>
-
-        <label for="confirmarSenha">Confirmar Senha:</label>
-        <input type="password" name="confirmarSenha" required><br><br>
-
-        <input type="submit" value="Salvar">
-    </form>
+ 		Pagina para testar Tag
+ 		
 </body>
 </html>
